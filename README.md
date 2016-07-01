@@ -6,12 +6,12 @@ The base Hadoop Docker image is also available as an official [Docker image](htt
 
 ##Pull the image from Docker Repository
 ```
-docker pull pjfanning/docker-spark:1.6.2
+docker pull pjfanning/docker-spark-jdk8:1.6.2
 ```
 
 ## Building the image
 ```
-docker build --rm -t pjfanning/docker-spark:1.6.2 .
+docker build --rm -t pjfanning/docker-spark-jdk8:1.6.2 .
 ```
 
 ## Running the image
@@ -24,12 +24,12 @@ docker run -it -p 8088:8088 -p 8042:8042 -p 4040:4040 -p 9000:9000 -p 50070:5007
 ```
 or
 ```
-docker run -d -h sandbox pjfanning/docker-spark:1.6.2 -d
+docker run -d -h sandbox pjfanning/docker-spark-jdk8:1.6.2 -d
 ```
 
 ## Versions
 ```
-Hadoop 2.6.0 and Apache Spark v1.6.2 on Centos 
+Oracle JDK 8, Hadoop 2.7.1 and Apache Spark v1.6.2 on Centos 
 ```
 
 ## Testing
