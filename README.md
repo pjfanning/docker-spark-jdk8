@@ -20,7 +20,7 @@ docker build --rm -t pjfanning/docker-spark-jdk8:1.6.2 .
 * in your /etc/hosts file add $(boot2docker ip) as host 'sandbox' to make it easier to access your sandbox UI
 * open yarn UI ports when running container
 ```
-docker run -it -p 8088:8088 -p 8042:8042 -p 4040:4040 -p 9000:9000 -p 50070:50070 -p 8030-8033:8030-8033 -h sandbox pjfanning/docker-spark:1.6.2 bash
+docker run -it -p 8088:8088 -p 8042:8042 -p 4040:4040 -p 9000:9000 -p 50070:50070 -p 8030-8033:8030-8033 -h sandbox pjfanning/docker-spark-jdk8:1.6.2 bash
 ```
 or
 ```
